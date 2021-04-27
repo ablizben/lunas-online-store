@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.NavBar {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 16px;
+  display: flex;
+
+  color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  box-shadow: 0 8px 6px -6px #646464;
+}
+
+.nav-links {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  display: flex;
+}
+
+.NavBar a {
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  color: inherit;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  margin-right: 10px;
+}
