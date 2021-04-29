@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, BrowserRouter as Router } from 'react-router-dom';
 
 
+
 const NavBar = () => {
     const dropDown = () => {
         document.getElementById("myDropdown").classList.toggle("show");
@@ -11,7 +12,7 @@ const NavBar = () => {
     return (
         <div className="NavBar">
             <Router>
-            <div className="nav-image">Luna's</div>
+            <div className="logo">Luna's</div>
             <div className="nav-mid-links">
               <NavLink to='/'>Home</NavLink>
               <NavLink to='/' onClick={dropDown} className='shop'>Shop</NavLink>

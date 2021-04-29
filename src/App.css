@@ -31,7 +31,8 @@
   display: flex;
 }
 
-.NavBar a {
+.NavBar a,
+.logo {
   text-decoration: none;
   position: relative;
   margin-bottom: 0px;
@@ -45,6 +46,9 @@
   font-size: 0.8rem;
 }
 
+.logo {
+  font-size: 2rem;
+}
 /* Dropdown functionality */
 /* Dropdown Button */
 .shop {
@@ -94,4 +98,34 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+}
+
+.back-in-stock {
+  margin-top: 100px;
+  font-size: 2rem;
+}
+
+.back-in-stock-btn {
+  margin-top: 15px;
+  border-radius: 50px;
+  padding: 20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.back-in-stock-btn:hover {
+  background-color: rgb(155, 155, 155);
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

@@ -11,11 +11,11 @@ const CarouselHero = () => {
 
     return (
         <div className="Carousel">
-    <AwesomeSlider>
-      <div data-src={imageOne} />
-      <div data-src={imageTwo} />
-      <div data-src={imageThree} />
-    </AwesomeSlider>
+        <AwesomeSlider>
+            <div data-src={imageOne} />
+            <div data-src={imageTwo} />
+            <div data-src={imageThree} />
+        </AwesomeSlider>
         </div>
     );
     }
