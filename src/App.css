@@ -21,6 +21,7 @@
   z-index: 1001;
   top: 0;
   box-shadow: 0 8px 6px -6px #646464;
+  background-color: white;
 }
 
 .nav-links {
@@ -47,16 +48,17 @@
 /* Dropdown functionality */
 /* Dropdown Button */
 .shop {
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
   cursor: pointer;
+}
+.shop:focus {
+  color: black;
+}
+.sales {
+  color: red !important;
 }
 
 /* Dropdown button on hover & focus */
-.shop:hover,
-.shop:focus {
+.shop:hover {
   color: gray;
 }
 
