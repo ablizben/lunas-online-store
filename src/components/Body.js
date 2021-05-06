@@ -1,10 +1,11 @@
-import React from "react";
+import React  from "react";
 import Card from './Card';
+import content from "./content";
+
 
 
 
 const Body = () => {
-
 
     return (
         <div className="body">
@@ -13,9 +14,9 @@ const Body = () => {
             <button className="back-in-stock-btn">Shop Now</button>
         </div>
         <div className="bottom-body">
-            <Card />
-            <Card />
-            <Card />
+            {content.map(card => {
+                return <Card card={card} key ={card.id} />;
+            })}
         </div>
         </div>
     );

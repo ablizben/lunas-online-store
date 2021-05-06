@@ -1,19 +1,18 @@
 import React from "react";
 
+const Card = (props) => {
 
-
-const Card = () => {
-
-
+    
     return (
         <div className="card">
             <div className="card-content">
-                <div className="card-image">Image</div>
-                <div className="card-header">Header</div>
-                <div className="card-body">Content</div>
-                <div className="card-link">Learn More</div>
+                <div className="card-image"><i class="fas fa-shipping-fast"></i></div>
+                <div className="card-header">{props.card.header}</div>
+                <div className="card-body">{props.card.content}</div>
+                <div className="card-link">{props.card.link}</div>
             </div>
         </div>
+
     );
     }
     
