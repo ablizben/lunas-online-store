@@ -98,6 +98,32 @@
   background-color: #ddd;
 }
 
+/* Carousel hero */
+
+.first-carousel,
+.second-carousel,
+.third-carousel {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+#summer-btn,
+#floral-btn,
+#cozy-btn {
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#summer-btn:hover,
+#floral-btn:hover,
+#cozy-btn:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
