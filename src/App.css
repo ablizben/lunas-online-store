@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Rock+Salt&family=Sacramento&display=swap");
+
 .App {
   text-align: center;
 }
@@ -98,14 +100,64 @@
   background-color: #ddd;
 }
 
-/* Carousel hero */
+/* Hero */
 
-.first-carousel,
-.second-carousel,
-.third-carousel {
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 5px;
+.hero {
+  display: flex;
+}
+
+.text-btn-1,
+.text-btn-3 {
+  margin-top: -150px;
+}
+
+.text-btn-2 {
+  margin-top: -400px;
+}
+
+.hero-1,
+.hero-2,
+.hero-3 {
+  position: relative;
+}
+
+.hero-text-1,
+.hero-text-2,
+.hero-text-3 {
+  position: absolute;
+}
+
+.hero-1,
+.hero-2,
+.hero-3 {
+  max-width: 33%;
+}
+
+#hero-image-1,
+#hero-image-2,
+#hero-image-3 {
+  width: 100%;
+  height: auto;
+  /* max-width: 33%; */
+}
+
+.hero-1 h3 {
+  color: white;
+  font-family: "Gochi Hand", cursive;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.hero-2 h3 {
+  color: white;
+  font-family: "Rock Salt", cursive;
+}
+
+.hero-3 h3 {
+  color: white;
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  margin-bottom: -1px;
 }
 
 #summer-btn,
@@ -115,12 +167,15 @@
   border: none;
   padding: 10px;
   text-transform: uppercase;
+  margin-top: -20px;
+  letter-spacing: 2px;
 }
 
 #summer-btn:hover,
 #floral-btn:hover,
 #cozy-btn:hover {
   background-color: gray;
+  /* text-decoration: underline; */
   cursor: pointer;
 }
 
