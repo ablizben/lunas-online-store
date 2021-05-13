@@ -5,41 +5,6 @@ import styled from "styled-components";
 import { Modal } from '@material-ui/core';
 
 
-const StyledModal = styled.div`
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 70%;
-background-color: white;
-padding: 6rem;
-border-radius: 5px;
-box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-z-index: 10;
-max-width: 250px;
-font-size: 15px;
-display:flex;
-flex-direction: column;
-align-items: center;
-
-`;
-
-const ModalBtn = styled.a`
-display: inline-block;
-  padding: 5px;
-  margin: 0.5rem 1rem;
-  width: 6rem;
-  background: transparent;
-  color: black;
-  text-align: center;
-  cursor: pointer;
-  background: lightgray;
-  justify-content: center;
-  border: none;
-&:hover {
-  background:darkgray;
-}`
-
 
 
 function NavBar() {
@@ -79,7 +44,7 @@ const handleClose = () => {
             </div>
             <div className="nav-right-links">
             <NavLink to='/registersignin'>Register/Sign in</NavLink>
-              <NavLink to='/search' onClick={handleSearch}><i className="fa fa-search"></i></NavLink>
+              <NavLink to='/search' onClick={handleSearch}><i className="fa fa-search" id="search-btn"></i></NavLink>
               <NavLink to='/shoppingcart'><i className="fa fa-shopping-cart"></i></NavLink>
             </div>
             </Router>
@@ -92,10 +57,13 @@ const handleClose = () => {
         aria-describedby="simple-modal-description"
       >
         <div>
-          <StyledModal>
+          <div className="modal">
           <h1>What are you searching for?</h1>
-          <ModalBtn onClick={handleClose}>Cancel</ModalBtn>
-          </StyledModal>
+          <input
+          type="text"
+          />
+          <button id="modal-cancel" onClick={handleClose}>Cancel</button>
+          </div>
         </div>
       </Modal>
    

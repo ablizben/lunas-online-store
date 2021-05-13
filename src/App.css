@@ -99,6 +99,67 @@
   background-color: #ddd;
 }
 
+#search-btn:hover {
+  color: gray !important;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  max-width: 250px;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+  align-content: center;
+}
+
+.modal h1 {
+  text-align: center;
+  margin-top: -10px;
+}
+.modal input {
+  margin: 2rem;
+}
+
+.modal input:focus {
+  outline: none;
+}
+
+#modal-cancel {
+  display: inline-block;
+  padding: 5px;
+  margin: 1rem;
+  width: 6rem;
+  background: transparent;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  background: lightgray;
+  justify-content: center;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+#modal-cancel:hover {
+  background: darkgray;
+}
+
 /* Hero */
 
 .hero {
