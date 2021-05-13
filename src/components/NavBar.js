@@ -8,7 +8,8 @@ import { Modal } from '@material-ui/core';
 
 
 function NavBar() {
-    const [openModal, setOpenModal] = useState(false);
+    const [openSearchModal, setOpenSearchModal] = useState(false);
+    const [openCartModal, setOpenCartModal] = useState(false);
 
     const dropDown = () => {
         document.getElementById("myDropdown").classList.toggle("show");
@@ -16,13 +17,22 @@ function NavBar() {
 }
 
 const handleSearch = () => {
-    setOpenModal(true);
+    setOpenSearchModal(true);
 
 }
 
-const handleClose = () => {
-    setOpenModal(false);
+const handleSearchClose = () => {
+    setOpenSearchModal(false);
   };
+
+
+const handleCart = () => {
+  setOpenCartModal(true);
+}
+
+const handleCartClose = () => {
+  setOpenCartModal(false);
+}
 
 
     return (
@@ -45,14 +55,14 @@ const handleClose = () => {
             <div className="nav-right-links">
             <NavLink to='/registersignin'>Register/Sign in</NavLink>
               <NavLink to='/search' onClick={handleSearch}><i className="fa fa-search" id="search-btn"></i></NavLink>
-              <NavLink to='/shoppingcart'><i className="fa fa-shopping-cart"></i></NavLink>
+              <NavLink to='/shoppingcart' onClick={handleCart}><i className="fa fa-shopping-cart" id="cart-btn"></i></NavLink>
             </div>
             </Router>
 
             
       <Modal
-        open={openModal}
-        onClose={handleClose}
+        open={openSearchModal}
+        onClose={handleSearchClose}
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
@@ -62,10 +72,28 @@ const handleClose = () => {
           <input
           type="text"
           />
-          <button id="modal-cancel" onClick={handleClose}>Cancel</button>
+          <button id="modal-cancel" onClick={handleSearchClose}>Cancel</button>
           </div>
         </div>
       </Modal>
+
+      <Modal
+        open={openCartModal}
+        onClose={handleCartClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        <div>
+          <div className="modal">
+          <h1>Your Shopping Cart</h1>
+          <p>You currently have 0 items in your cart.</p>
+          <button id="modal-shop">Go Shop</button>
+          <button id="modal-cancel" onClick={handleCartClose}>Cancel</button>
+          </div>
+        </div>
+      </Modal>
+
+      
    
         </div>
     );
