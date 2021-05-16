@@ -1,0 +1,26 @@
+.new-header {
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+  align-content: center;
+  margin-top: 200px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.category-filter,
+.color-filter,
+.price-filter {
+  margin-left: 10px;
+  border: 1px black solid;
+  padding: 10px;
+  margin-bottom: 10px;
+}

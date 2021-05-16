@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import { NavLink, BrowserRouter as Router } from 'react-router-dom';
 import styled from "styled-components";
 import { Modal } from '@material-ui/core';
@@ -43,7 +42,7 @@ const handleCartClose = () => {
               <NavLink to='/'>Home</NavLink>
               <NavLink to='/' onClick={dropDown} className='shop'>Shop</NavLink>
               <div id="myDropdown" className="dropdown-content">
-                  <a href="#">New</a>
+                  <a href="/New">New</a>
                   <a href="#">Clothing</a>
                   <a href="#">Accessories</a>
                   <a href="#">Shoes</a>
@@ -58,6 +57,7 @@ const handleCartClose = () => {
               <NavLink to='/shoppingcart' onClick={handleCart}><i className="fa fa-shopping-cart" id="cart-btn"></i></NavLink>
             </div>
             </Router>
+        
 
             
       <Modal
@@ -71,7 +71,10 @@ const handleCartClose = () => {
           <h1>What are you searching for?</h1>
           <input
           type="text"
+          id="search-bar"
+          placeholder="I'm looking for..."
           />
+          <button type="submit" id="modal-submit">Go!</button>
           <button id="modal-cancel" onClick={handleSearchClose}>Cancel</button>
           </div>
         </div>
@@ -87,7 +90,7 @@ const handleCartClose = () => {
           <div className="modal">
           <h1>Your Shopping Cart</h1>
           <p>You currently have 0 items in your cart.</p>
-          <button id="modal-shop">Go Shop</button>
+          <button id="modal-shop">Shop</button>
           <button id="modal-cancel" onClick={handleCartClose}>Cancel</button>
           </div>
         </div>
