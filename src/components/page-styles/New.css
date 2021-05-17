@@ -24,3 +24,38 @@
   padding: 10px;
   margin-bottom: 10px;
 }
+
+.new-components {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Card */
+.item-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 50px;
+  max-width: 250px;
+}
+
+.new-card-content {
+  justify-content: center;
+}
+
+.card-footer {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.clothes-price {
+  font-weight: 700;
+}
+
+/* Filter */

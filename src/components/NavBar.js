@@ -39,7 +39,7 @@ const handleCartClose = () => {
             <Router>
             <div className="logo">Luna's</div>
             <div className="nav-mid-links">
-              <NavLink to='/'>Home</NavLink>
+              <a href='/'>Home</a>
               <NavLink to='/' onClick={dropDown} className='shop'>Shop</NavLink>
               <div id="myDropdown" className="dropdown-content">
                   <a href="/New">New</a>
