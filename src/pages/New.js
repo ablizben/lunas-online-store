@@ -21,7 +21,7 @@ const New = () => {
                 <div className="filters">
                     <div className="category-filter">
                         <div className="category-header">
-                        Category Filter
+                        Category
                         </div>
                     {/* Need to refactor to make one category item */}
                     <div className="category-item">
@@ -44,7 +44,7 @@ const New = () => {
 
                     <div className="color-filter">
                         <div className="color-header">
-                        Color Filter
+                        Color
                         </div>
                     {/* Need to refactor to make one category item */}
                     <div className="color-item">
@@ -79,7 +79,7 @@ const New = () => {
 
 
                     <div className="price-filter">
-                        <div className="price-header">Price Filter
+                        <div className="price-header">Price
                         </div>
                     </div>
                     </div>

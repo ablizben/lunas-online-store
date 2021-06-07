@@ -1,0 +1,20 @@
+/* New Page Photos */
+.project1 {
+  background-image: url("../../images/floppyhat.jpeg");
+  height: 100%;
+}
+.project2 {
+  background-image: url("../../images/blackdress.jpeg");
+}
+.project3 {
+  background-image: url("../../images/leopard.jpeg");
+}
+.project4 {
+  background-image: url("../../images/jeans.jpeg");
+}
+.project5 {
+  background-image: url("../../images/sandals.jpeg");
+}
+.project6 {
+  background-image: url("../../images/yellowbikini.jpeg");
+}
