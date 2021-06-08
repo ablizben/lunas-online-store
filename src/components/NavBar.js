@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink, BrowserRouter as Router } from 'react-router-dom';
-import styled from "styled-components";
 import { Modal } from '@material-ui/core';
 
 
@@ -43,10 +42,10 @@ const handleCartClose = () => {
               <NavLink to='/' onClick={dropDown} className='shop'>Shop</NavLink>
               <div id="myDropdown" className="dropdown-content">
                   <a href="/New">New</a>
-                  <a href="#">Clothing</a>
-                  <a href="#">Accessories</a>
-                  <a href="#">Shoes</a>
-                  <a href="#" className='sales'>Sales</a>
+                  <a href="/Clothing">Clothing</a>
+                  <a href="/Accessories">Accessories</a>
+                  <a href="/Shoes">Shoes</a>
+                  <a href="/Sales" className='sales'>Sales</a>
               </div>
               <NavLink to='/blog'>Blog</NavLink>
               <NavLink to='/support'>Support</NavLink>
