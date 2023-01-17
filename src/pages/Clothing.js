@@ -5,7 +5,7 @@ import Filter from '../components/Filter';
 import NewCard from '../components/NewCard';
 import Footer from '../components/Footer';
 import NewContent from '../components/NewContent';
-import { Checkbox } from '@material-ui/core';
+import Checkbox from '@mui/material/Checkbox';
 
 
 

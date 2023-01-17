@@ -20,7 +20,7 @@ const Hero = () => {
             <div className="hero-2">
                 <img src={imageTwo} id="hero-image-2" alt="woman looking over oceanview in long, blue dress" />
                 <div className="text-btn-2">
-                    <h3>Summer Lookbook 2021</h3>
+                    <h3>Summer Lookbook 2023</h3>
                     <button id="summer-btn">Shop The Collection</button>
                 </div>
             </div>

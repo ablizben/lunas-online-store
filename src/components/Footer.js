@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="bottom-footer">
-            &copy; 2021, Luna's. All Rights Reserved.
+            &copy; 2023, Luna's. All Rights Reserved.
             </div>
         </div>
     );

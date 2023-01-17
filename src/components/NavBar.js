@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, BrowserRouter as Router } from 'react-router-dom';
-import { Modal } from '@material-ui/core';
+import Modal from '@mui/material/Modal';
 
 
 
