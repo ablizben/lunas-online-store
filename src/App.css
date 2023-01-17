@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Rock+Salt&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Sofia+Sans:wght@100;200;300;400&display=swap");
 
 .App {
   text-align: center;
+  font-family: "Sofia Sans", sans-serif;
 }
 
 .NavBar {
@@ -230,29 +232,32 @@
 }
 
 #summer-btn {
-  border-radius: 50px;
   border: none;
   padding: 10px;
   text-transform: uppercase;
   margin-top: -20px;
   letter-spacing: 2px;
+  background-color: #fff;
+  font-family: "Sofia Sans", sans-serif;
 }
 
 #floral-btn,
 #cozy-btn {
-  border-radius: 50px;
   border: none;
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background-color: #fff;
+  font-family: "Sofia Sans", sans-serif;
 }
 
 #summer-btn:hover,
 #floral-btn:hover,
 #cozy-btn:hover {
-  background-color: gray;
-  /* text-decoration: underline; */
+  background-color: black;
   cursor: pointer;
+  color: #fff;
+  transition: all 0.4s ease;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -271,15 +276,19 @@
 
 .back-in-stock-btn {
   margin-top: 15px;
-  border-radius: 50px;
   padding: 20px;
   border: none;
   text-transform: uppercase;
+  letter-spacing: 5px;
+  background-color: white;
+  border: black 1px solid;
 }
 
 .back-in-stock-btn:hover {
-  background-color: rgb(155, 155, 155);
+  color: white;
+  background-color: black;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 
 .card {
